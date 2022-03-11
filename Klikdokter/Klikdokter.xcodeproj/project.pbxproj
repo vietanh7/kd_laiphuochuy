@@ -1,0 +1,981 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5AF55CD56CE71B112D9EAA90 /* Pods_Klikdokter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C6C272DDF5144138C9766A7 /* Pods_Klikdokter.framework */; };
+		8494863627DADBB300359E08 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8494863527DADBB300359E08 /* StringExtension.swift */; };
+		8499D42A27DA0CF00023D75C /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8499D42927DA0CF00023D75C /* UIViewControllerExtension.swift */; };
+		8499D42C27DA0D870023D75C /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8499D42B27DA0D870023D75C /* Constants.swift */; };
+		8499D43027DA0DF30023D75C /* ProductListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8499D42F27DA0DF30023D75C /* ProductListViewController.swift */; };
+		8499D43227DA0E620023D75C /* AuthenticateRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8499D43127DA0E620023D75C /* AuthenticateRequest.swift */; };
+		8499D43427DA0E750023D75C /* ProductRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8499D43327DA0E750023D75C /* ProductRequest.swift */; };
+		8499D43827DA1AD20023D75C /* AuthenticateViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8499D43727DA1AD20023D75C /* AuthenticateViewModel.swift */; };
+		8499D43A27DA1AFE0023D75C /* ProductListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8499D43927DA1AFE0023D75C /* ProductListViewModel.swift */; };
+		8499D43C27DA1E9E0023D75C /* LogInResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8499D43B27DA1E9E0023D75C /* LogInResponse.swift */; };
+		8499D43E27DA1EAF0023D75C /* RegisterResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8499D43D27DA1EAF0023D75C /* RegisterResponse.swift */; };
+		8499D44027DA1EDD0023D75C /* ErrorResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8499D43F27DA1EDD0023D75C /* ErrorResponse.swift */; };
+		8499D44427DA2A9F0023D75C /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8499D44327DA2A9F0023D75C /* BaseViewModel.swift */; };
+		8499D44D27DA3F450023D75C /* AddProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8499D44C27DA3F450023D75C /* AddProductViewController.swift */; };
+		8499D44F27DA40A80023D75C /* AddProductViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8499D44E27DA40A80023D75C /* AddProductViewModel.swift */; };
+		8499D45127DA410E0023D75C /* ProductListResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8499D45027DA410E0023D75C /* ProductListResponse.swift */; };
+		8499D45327DA44720023D75C /* ProductErrorResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8499D45227DA44720023D75C /* ProductErrorResponse.swift */; };
+		8499D45727DA4E630023D75C /* ProductListHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8499D45627DA4E630023D75C /* ProductListHeaderView.swift */; };
+		8499D45927DA4E910023D75C /* ProductListHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8499D45827DA4E910023D75C /* ProductListHeaderView.xib */; };
+		8499D45B27DA51C40023D75C /* ProductTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8499D45A27DA51C40023D75C /* ProductTableViewCell.swift */; };
+		8499D45D27DA51F50023D75C /* ProductTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8499D45C27DA51F50023D75C /* ProductTableViewCell.xib */; };
+		8499D45F27DA58540023D75C /* UIButtonExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8499D45E27DA58540023D75C /* UIButtonExtension.swift */; };
+		84C8F09827DA054B008F66A6 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C8F09727DA054B008F66A6 /* NetworkService.swift */; };
+		84CD1BB527D9F9F800234579 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84CD1BB427D9F9F800234579 /* AppDelegate.swift */; };
+		84CD1BB727D9F9F800234579 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84CD1BB627D9F9F800234579 /* SceneDelegate.swift */; };
+		84CD1BB927D9F9F800234579 /* CommonAuthenticateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84CD1BB827D9F9F800234579 /* CommonAuthenticateViewController.swift */; };
+		84CD1BBC27D9F9F800234579 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84CD1BBA27D9F9F800234579 /* Main.storyboard */; };
+		84CD1BBE27D9F9FA00234579 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84CD1BBD27D9F9FA00234579 /* Assets.xcassets */; };
+		84CD1BC127D9F9FA00234579 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84CD1BBF27D9F9FA00234579 /* LaunchScreen.storyboard */; };
+		84CD1BCC27D9F9FB00234579 /* KlikdokterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84CD1BCB27D9F9FB00234579 /* KlikdokterTests.swift */; };
+		84CD1BD627D9F9FB00234579 /* KlikdokterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84CD1BD527D9F9FB00234579 /* KlikdokterUITests.swift */; };
+		84CD1BD827D9F9FB00234579 /* KlikdokterUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84CD1BD727D9F9FB00234579 /* KlikdokterUITestsLaunchTests.swift */; };
+		A019140F4DA134D05FA8C571 /* Pods_KlikdokterUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACAE24C0A4F2F8FA4D433B0D /* Pods_KlikdokterUITests.framework */; };
+		A53AC8E35287521F76901AB3 /* Pods_KlikdokterTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BE1998DAACFCFA95BA6898D /* Pods_KlikdokterTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		84CD1BC827D9F9FA00234579 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84CD1BA927D9F9F800234579 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 84CD1BB027D9F9F800234579;
+			remoteInfo = Klikdokter;
+		};
+		84CD1BD227D9F9FB00234579 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84CD1BA927D9F9F800234579 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 84CD1BB027D9F9F800234579;
+			remoteInfo = Klikdokter;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0C6C272DDF5144138C9766A7 /* Pods_Klikdokter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Klikdokter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F554441419C25B073F60B90 /* Pods-KlikdokterUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KlikdokterUITests.debug.xcconfig"; path = "Target Support Files/Pods-KlikdokterUITests/Pods-KlikdokterUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		5BE1998DAACFCFA95BA6898D /* Pods_KlikdokterTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KlikdokterTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8494863527DADBB300359E08 /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
+		8499D42927DA0CF00023D75C /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
+		8499D42B27DA0D870023D75C /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		8499D42F27DA0DF30023D75C /* ProductListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListViewController.swift; sourceTree = "<group>"; };
+		8499D43127DA0E620023D75C /* AuthenticateRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticateRequest.swift; sourceTree = "<group>"; };
+		8499D43327DA0E750023D75C /* ProductRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductRequest.swift; sourceTree = "<group>"; };
+		8499D43727DA1AD20023D75C /* AuthenticateViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticateViewModel.swift; sourceTree = "<group>"; };
+		8499D43927DA1AFE0023D75C /* ProductListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListViewModel.swift; sourceTree = "<group>"; };
+		8499D43B27DA1E9E0023D75C /* LogInResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInResponse.swift; sourceTree = "<group>"; };
+		8499D43D27DA1EAF0023D75C /* RegisterResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterResponse.swift; sourceTree = "<group>"; };
+		8499D43F27DA1EDD0023D75C /* ErrorResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorResponse.swift; sourceTree = "<group>"; };
+		8499D44327DA2A9F0023D75C /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
+		8499D44C27DA3F450023D75C /* AddProductViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddProductViewController.swift; sourceTree = "<group>"; };
+		8499D44E27DA40A80023D75C /* AddProductViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddProductViewModel.swift; sourceTree = "<group>"; };
+		8499D45027DA410E0023D75C /* ProductListResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListResponse.swift; sourceTree = "<group>"; };
+		8499D45227DA44720023D75C /* ProductErrorResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductErrorResponse.swift; sourceTree = "<group>"; };
+		8499D45627DA4E630023D75C /* ProductListHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListHeaderView.swift; sourceTree = "<group>"; };
+		8499D45827DA4E910023D75C /* ProductListHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductListHeaderView.xib; sourceTree = "<group>"; };
+		8499D45A27DA51C40023D75C /* ProductTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductTableViewCell.swift; sourceTree = "<group>"; };
+		8499D45C27DA51F50023D75C /* ProductTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductTableViewCell.xib; sourceTree = "<group>"; };
+		8499D45E27DA58540023D75C /* UIButtonExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButtonExtension.swift; sourceTree = "<group>"; };
+		84C8F09727DA054B008F66A6 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		84CD1BB127D9F9F800234579 /* Klikdokter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Klikdokter.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		84CD1BB427D9F9F800234579 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		84CD1BB627D9F9F800234579 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		84CD1BB827D9F9F800234579 /* CommonAuthenticateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonAuthenticateViewController.swift; sourceTree = "<group>"; };
+		84CD1BBB27D9F9F800234579 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		84CD1BBD27D9F9FA00234579 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		84CD1BC027D9F9FA00234579 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		84CD1BC227D9F9FA00234579 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84CD1BC727D9F9FA00234579 /* KlikdokterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KlikdokterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		84CD1BCB27D9F9FB00234579 /* KlikdokterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KlikdokterTests.swift; sourceTree = "<group>"; };
+		84CD1BD127D9F9FB00234579 /* KlikdokterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KlikdokterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		84CD1BD527D9F9FB00234579 /* KlikdokterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KlikdokterUITests.swift; sourceTree = "<group>"; };
+		84CD1BD727D9F9FB00234579 /* KlikdokterUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KlikdokterUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		8A2FCFD4A7C063B8C048D7D2 /* Pods-Klikdokter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Klikdokter.release.xcconfig"; path = "Target Support Files/Pods-Klikdokter/Pods-Klikdokter.release.xcconfig"; sourceTree = "<group>"; };
+		8E7267353493571CB2FB6C50 /* Pods-Klikdokter-KlikdokterUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Klikdokter-KlikdokterUITests.release.xcconfig"; path = "Target Support Files/Pods-Klikdokter-KlikdokterUITests/Pods-Klikdokter-KlikdokterUITests.release.xcconfig"; sourceTree = "<group>"; };
+		907F34BCD507131ED914F2F7 /* Pods-KlikdokterTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KlikdokterTests.release.xcconfig"; path = "Target Support Files/Pods-KlikdokterTests/Pods-KlikdokterTests.release.xcconfig"; sourceTree = "<group>"; };
+		95815197AD05F7BDE3AC7BD1 /* Pods-KlikdokterTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KlikdokterTests.debug.xcconfig"; path = "Target Support Files/Pods-KlikdokterTests/Pods-KlikdokterTests.debug.xcconfig"; sourceTree = "<group>"; };
+		ACAE24C0A4F2F8FA4D433B0D /* Pods_KlikdokterUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KlikdokterUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B63EB3925239C3ACD67FEFEC /* Pods-Klikdokter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Klikdokter.debug.xcconfig"; path = "Target Support Files/Pods-Klikdokter/Pods-Klikdokter.debug.xcconfig"; sourceTree = "<group>"; };
+		C36FF87C2EC2334B70C46682 /* Pods-Klikdokter-KlikdokterUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Klikdokter-KlikdokterUITests.debug.xcconfig"; path = "Target Support Files/Pods-Klikdokter-KlikdokterUITests/Pods-Klikdokter-KlikdokterUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		F1B03A1AEC5C84A23C8DC309 /* Pods-KlikdokterUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KlikdokterUITests.release.xcconfig"; path = "Target Support Files/Pods-KlikdokterUITests/Pods-KlikdokterUITests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		84CD1BAE27D9F9F800234579 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5AF55CD56CE71B112D9EAA90 /* Pods_Klikdokter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84CD1BC427D9F9FA00234579 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A53AC8E35287521F76901AB3 /* Pods_KlikdokterTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84CD1BCE27D9F9FB00234579 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A019140F4DA134D05FA8C571 /* Pods_KlikdokterUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		792289D2A68B5A6C911BDC3C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B63EB3925239C3ACD67FEFEC /* Pods-Klikdokter.debug.xcconfig */,
+				8A2FCFD4A7C063B8C048D7D2 /* Pods-Klikdokter.release.xcconfig */,
+				C36FF87C2EC2334B70C46682 /* Pods-Klikdokter-KlikdokterUITests.debug.xcconfig */,
+				8E7267353493571CB2FB6C50 /* Pods-Klikdokter-KlikdokterUITests.release.xcconfig */,
+				95815197AD05F7BDE3AC7BD1 /* Pods-KlikdokterTests.debug.xcconfig */,
+				907F34BCD507131ED914F2F7 /* Pods-KlikdokterTests.release.xcconfig */,
+				1F554441419C25B073F60B90 /* Pods-KlikdokterUITests.debug.xcconfig */,
+				F1B03A1AEC5C84A23C8DC309 /* Pods-KlikdokterUITests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		8499D42827DA0CD90023D75C /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				8499D42927DA0CF00023D75C /* UIViewControllerExtension.swift */,
+				8499D45E27DA58540023D75C /* UIButtonExtension.swift */,
+				8494863527DADBB300359E08 /* StringExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		8499D44A27DA3F1C0023D75C /* Product */ = {
+			isa = PBXGroup;
+			children = (
+				8499D44B27DA3F280023D75C /* AddProduct */,
+				84C8F09327DA03A1008F66A6 /* ProductList */,
+			);
+			path = Product;
+			sourceTree = "<group>";
+		};
+		8499D44B27DA3F280023D75C /* AddProduct */ = {
+			isa = PBXGroup;
+			children = (
+				8499D44C27DA3F450023D75C /* AddProductViewController.swift */,
+			);
+			path = AddProduct;
+			sourceTree = "<group>";
+		};
+		8499D45427DA4E260023D75C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8499D45627DA4E630023D75C /* ProductListHeaderView.swift */,
+				8499D45827DA4E910023D75C /* ProductListHeaderView.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		8499D45527DA4E330023D75C /* TableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				8499D45A27DA51C40023D75C /* ProductTableViewCell.swift */,
+				8499D45C27DA51F50023D75C /* ProductTableViewCell.xib */,
+			);
+			path = TableViewCells;
+			sourceTree = "<group>";
+		};
+		84C8F08B27D9FDFF008F66A6 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				8499D42B27DA0D870023D75C /* Constants.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		84C8F08F27D9FFBD008F66A6 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				8499D44A27DA3F1C0023D75C /* Product */,
+				84C8F09127DA032C008F66A6 /* Authenticate */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		84C8F09027DA02FC008F66A6 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				84CD1BBA27D9F9F800234579 /* Main.storyboard */,
+				84CD1BBF27D9F9FA00234579 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		84C8F09127DA032C008F66A6 /* Authenticate */ = {
+			isa = PBXGroup;
+			children = (
+				84CD1BB827D9F9F800234579 /* CommonAuthenticateViewController.swift */,
+			);
+			path = Authenticate;
+			sourceTree = "<group>";
+		};
+		84C8F09327DA03A1008F66A6 /* ProductList */ = {
+			isa = PBXGroup;
+			children = (
+				8499D45427DA4E260023D75C /* Views */,
+				8499D45527DA4E330023D75C /* TableViewCells */,
+				8499D42F27DA0DF30023D75C /* ProductListViewController.swift */,
+			);
+			path = ProductList;
+			sourceTree = "<group>";
+		};
+		84C8F09427DA03BF008F66A6 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8499D43B27DA1E9E0023D75C /* LogInResponse.swift */,
+				8499D43D27DA1EAF0023D75C /* RegisterResponse.swift */,
+				8499D43F27DA1EDD0023D75C /* ErrorResponse.swift */,
+				8499D45027DA410E0023D75C /* ProductListResponse.swift */,
+				8499D45227DA44720023D75C /* ProductErrorResponse.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		84C8F09527DA03C5008F66A6 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				8499D43727DA1AD20023D75C /* AuthenticateViewModel.swift */,
+				8499D43927DA1AFE0023D75C /* ProductListViewModel.swift */,
+				8499D44327DA2A9F0023D75C /* BaseViewModel.swift */,
+				8499D44E27DA40A80023D75C /* AddProductViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		84C8F09627DA0400008F66A6 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				84C8F09727DA054B008F66A6 /* NetworkService.swift */,
+				8499D43127DA0E620023D75C /* AuthenticateRequest.swift */,
+				8499D43327DA0E750023D75C /* ProductRequest.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		84CD1BA827D9F9F800234579 = {
+			isa = PBXGroup;
+			children = (
+				84CD1BB327D9F9F800234579 /* Klikdokter */,
+				84CD1BCA27D9F9FB00234579 /* KlikdokterTests */,
+				84CD1BD427D9F9FB00234579 /* KlikdokterUITests */,
+				84CD1BB227D9F9F800234579 /* Products */,
+				792289D2A68B5A6C911BDC3C /* Pods */,
+				BE49F43155753D42CC562149 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		84CD1BB227D9F9F800234579 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				84CD1BB127D9F9F800234579 /* Klikdokter.app */,
+				84CD1BC727D9F9FA00234579 /* KlikdokterTests.xctest */,
+				84CD1BD127D9F9FB00234579 /* KlikdokterUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		84CD1BB327D9F9F800234579 /* Klikdokter */ = {
+			isa = PBXGroup;
+			children = (
+				8499D42827DA0CD90023D75C /* Extensions */,
+				84C8F09627DA0400008F66A6 /* Services */,
+				84C8F09527DA03C5008F66A6 /* ViewModels */,
+				84C8F09427DA03BF008F66A6 /* Models */,
+				84C8F09027DA02FC008F66A6 /* Storyboards */,
+				84C8F08F27D9FFBD008F66A6 /* Controllers */,
+				84C8F08B27D9FDFF008F66A6 /* Utils */,
+				84CD1BB427D9F9F800234579 /* AppDelegate.swift */,
+				84CD1BB627D9F9F800234579 /* SceneDelegate.swift */,
+				84CD1BBD27D9F9FA00234579 /* Assets.xcassets */,
+				84CD1BC227D9F9FA00234579 /* Info.plist */,
+			);
+			path = Klikdokter;
+			sourceTree = "<group>";
+		};
+		84CD1BCA27D9F9FB00234579 /* KlikdokterTests */ = {
+			isa = PBXGroup;
+			children = (
+				84CD1BCB27D9F9FB00234579 /* KlikdokterTests.swift */,
+			);
+			path = KlikdokterTests;
+			sourceTree = "<group>";
+		};
+		84CD1BD427D9F9FB00234579 /* KlikdokterUITests */ = {
+			isa = PBXGroup;
+			children = (
+				84CD1BD527D9F9FB00234579 /* KlikdokterUITests.swift */,
+				84CD1BD727D9F9FB00234579 /* KlikdokterUITestsLaunchTests.swift */,
+			);
+			path = KlikdokterUITests;
+			sourceTree = "<group>";
+		};
+		BE49F43155753D42CC562149 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0C6C272DDF5144138C9766A7 /* Pods_Klikdokter.framework */,
+				5BE1998DAACFCFA95BA6898D /* Pods_KlikdokterTests.framework */,
+				ACAE24C0A4F2F8FA4D433B0D /* Pods_KlikdokterUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		84CD1BB027D9F9F800234579 /* Klikdokter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84CD1BDB27D9F9FB00234579 /* Build configuration list for PBXNativeTarget "Klikdokter" */;
+			buildPhases = (
+				CF18777F75E812B506F91776 /* [CP] Check Pods Manifest.lock */,
+				84CD1BAD27D9F9F800234579 /* Sources */,
+				84CD1BAE27D9F9F800234579 /* Frameworks */,
+				84CD1BAF27D9F9F800234579 /* Resources */,
+				E3C5CFEF2361E5A0A3685C57 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Klikdokter;
+			productName = Klikdokter;
+			productReference = 84CD1BB127D9F9F800234579 /* Klikdokter.app */;
+			productType = "com.apple.product-type.application";
+		};
+		84CD1BC627D9F9FA00234579 /* KlikdokterTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84CD1BDE27D9F9FB00234579 /* Build configuration list for PBXNativeTarget "KlikdokterTests" */;
+			buildPhases = (
+				1058F938A6F1C48C32611AA7 /* [CP] Check Pods Manifest.lock */,
+				84CD1BC327D9F9FA00234579 /* Sources */,
+				84CD1BC427D9F9FA00234579 /* Frameworks */,
+				84CD1BC527D9F9FA00234579 /* Resources */,
+				5EFC3E4634E981348FB1797C /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				84CD1BC927D9F9FA00234579 /* PBXTargetDependency */,
+			);
+			name = KlikdokterTests;
+			productName = KlikdokterTests;
+			productReference = 84CD1BC727D9F9FA00234579 /* KlikdokterTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		84CD1BD027D9F9FB00234579 /* KlikdokterUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84CD1BE127D9F9FB00234579 /* Build configuration list for PBXNativeTarget "KlikdokterUITests" */;
+			buildPhases = (
+				18BAACC55A2106EB551760BF /* [CP] Check Pods Manifest.lock */,
+				84CD1BCD27D9F9FB00234579 /* Sources */,
+				84CD1BCE27D9F9FB00234579 /* Frameworks */,
+				84CD1BCF27D9F9FB00234579 /* Resources */,
+				790875A7E1FAA5F5508E6674 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				84CD1BD327D9F9FB00234579 /* PBXTargetDependency */,
+			);
+			name = KlikdokterUITests;
+			productName = KlikdokterUITests;
+			productReference = 84CD1BD127D9F9FB00234579 /* KlikdokterUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		84CD1BA927D9F9F800234579 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					84CD1BB027D9F9F800234579 = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+					84CD1BC627D9F9FA00234579 = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = 84CD1BB027D9F9F800234579;
+					};
+					84CD1BD027D9F9FB00234579 = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = 84CD1BB027D9F9F800234579;
+					};
+				};
+			};
+			buildConfigurationList = 84CD1BAC27D9F9F800234579 /* Build configuration list for PBXProject "Klikdokter" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 84CD1BA827D9F9F800234579;
+			productRefGroup = 84CD1BB227D9F9F800234579 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				84CD1BB027D9F9F800234579 /* Klikdokter */,
+				84CD1BC627D9F9FA00234579 /* KlikdokterTests */,
+				84CD1BD027D9F9FB00234579 /* KlikdokterUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		84CD1BAF27D9F9F800234579 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84CD1BC127D9F9FA00234579 /* LaunchScreen.storyboard in Resources */,
+				84CD1BBE27D9F9FA00234579 /* Assets.xcassets in Resources */,
+				8499D45D27DA51F50023D75C /* ProductTableViewCell.xib in Resources */,
+				84CD1BBC27D9F9F800234579 /* Main.storyboard in Resources */,
+				8499D45927DA4E910023D75C /* ProductListHeaderView.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84CD1BC527D9F9FA00234579 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84CD1BCF27D9F9FB00234579 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1058F938A6F1C48C32611AA7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KlikdokterTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		18BAACC55A2106EB551760BF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KlikdokterUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5EFC3E4634E981348FB1797C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KlikdokterTests/Pods-KlikdokterTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KlikdokterTests/Pods-KlikdokterTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-KlikdokterTests/Pods-KlikdokterTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		790875A7E1FAA5F5508E6674 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KlikdokterUITests/Pods-KlikdokterUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KlikdokterUITests/Pods-KlikdokterUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-KlikdokterUITests/Pods-KlikdokterUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CF18777F75E812B506F91776 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Klikdokter-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E3C5CFEF2361E5A0A3685C57 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Klikdokter/Pods-Klikdokter-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Klikdokter/Pods-Klikdokter-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Klikdokter/Pods-Klikdokter-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		84CD1BAD27D9F9F800234579 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8499D44027DA1EDD0023D75C /* ErrorResponse.swift in Sources */,
+				8499D45F27DA58540023D75C /* UIButtonExtension.swift in Sources */,
+				8499D44F27DA40A80023D75C /* AddProductViewModel.swift in Sources */,
+				8499D45B27DA51C40023D75C /* ProductTableViewCell.swift in Sources */,
+				8499D42A27DA0CF00023D75C /* UIViewControllerExtension.swift in Sources */,
+				8499D45327DA44720023D75C /* ProductErrorResponse.swift in Sources */,
+				8499D44D27DA3F450023D75C /* AddProductViewController.swift in Sources */,
+				84C8F09827DA054B008F66A6 /* NetworkService.swift in Sources */,
+				8499D43A27DA1AFE0023D75C /* ProductListViewModel.swift in Sources */,
+				8499D43C27DA1E9E0023D75C /* LogInResponse.swift in Sources */,
+				8499D44427DA2A9F0023D75C /* BaseViewModel.swift in Sources */,
+				84CD1BB927D9F9F800234579 /* CommonAuthenticateViewController.swift in Sources */,
+				84CD1BB527D9F9F800234579 /* AppDelegate.swift in Sources */,
+				8499D45727DA4E630023D75C /* ProductListHeaderView.swift in Sources */,
+				84CD1BB727D9F9F800234579 /* SceneDelegate.swift in Sources */,
+				8499D43827DA1AD20023D75C /* AuthenticateViewModel.swift in Sources */,
+				8499D43227DA0E620023D75C /* AuthenticateRequest.swift in Sources */,
+				8499D43427DA0E750023D75C /* ProductRequest.swift in Sources */,
+				8499D43E27DA1EAF0023D75C /* RegisterResponse.swift in Sources */,
+				8494863627DADBB300359E08 /* StringExtension.swift in Sources */,
+				8499D43027DA0DF30023D75C /* ProductListViewController.swift in Sources */,
+				8499D45127DA410E0023D75C /* ProductListResponse.swift in Sources */,
+				8499D42C27DA0D870023D75C /* Constants.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84CD1BC327D9F9FA00234579 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84CD1BCC27D9F9FB00234579 /* KlikdokterTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84CD1BCD27D9F9FB00234579 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84CD1BD827D9F9FB00234579 /* KlikdokterUITestsLaunchTests.swift in Sources */,
+				84CD1BD627D9F9FB00234579 /* KlikdokterUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		84CD1BC927D9F9FA00234579 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 84CD1BB027D9F9F800234579 /* Klikdokter */;
+			targetProxy = 84CD1BC827D9F9FA00234579 /* PBXContainerItemProxy */;
+		};
+		84CD1BD327D9F9FB00234579 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 84CD1BB027D9F9F800234579 /* Klikdokter */;
+			targetProxy = 84CD1BD227D9F9FB00234579 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		84CD1BBA27D9F9F800234579 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				84CD1BBB27D9F9F800234579 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		84CD1BBF27D9F9FA00234579 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				84CD1BC027D9F9FA00234579 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		84CD1BD927D9F9FB00234579 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		84CD1BDA27D9F9FB00234579 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		84CD1BDC27D9F9FB00234579 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B63EB3925239C3ACD67FEFEC /* Pods-Klikdokter.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Z6PA7GBBD6;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Klikdokter/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Klikdokter.ios.Klikdokter;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		84CD1BDD27D9F9FB00234579 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8A2FCFD4A7C063B8C048D7D2 /* Pods-Klikdokter.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Z6PA7GBBD6;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Klikdokter/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Klikdokter.ios.Klikdokter;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		84CD1BDF27D9F9FB00234579 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 95815197AD05F7BDE3AC7BD1 /* Pods-KlikdokterTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Z6PA7GBBD6;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Klikdokter.ios.KlikdokterTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Klikdokter.app/Klikdokter";
+			};
+			name = Debug;
+		};
+		84CD1BE027D9F9FB00234579 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 907F34BCD507131ED914F2F7 /* Pods-KlikdokterTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Z6PA7GBBD6;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Klikdokter.ios.KlikdokterTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Klikdokter.app/Klikdokter";
+			};
+			name = Release;
+		};
+		84CD1BE227D9F9FB00234579 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1F554441419C25B073F60B90 /* Pods-KlikdokterUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Z6PA7GBBD6;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Klikdokter.ios.KlikdokterUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Klikdokter;
+			};
+			name = Debug;
+		};
+		84CD1BE327D9F9FB00234579 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F1B03A1AEC5C84A23C8DC309 /* Pods-KlikdokterUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Z6PA7GBBD6;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Klikdokter.ios.KlikdokterUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Klikdokter;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		84CD1BAC27D9F9F800234579 /* Build configuration list for PBXProject "Klikdokter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84CD1BD927D9F9FB00234579 /* Debug */,
+				84CD1BDA27D9F9FB00234579 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84CD1BDB27D9F9FB00234579 /* Build configuration list for PBXNativeTarget "Klikdokter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84CD1BDC27D9F9FB00234579 /* Debug */,
+				84CD1BDD27D9F9FB00234579 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84CD1BDE27D9F9FB00234579 /* Build configuration list for PBXNativeTarget "KlikdokterTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84CD1BDF27D9F9FB00234579 /* Debug */,
+				84CD1BE027D9F9FB00234579 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84CD1BE127D9F9FB00234579 /* Build configuration list for PBXNativeTarget "KlikdokterUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84CD1BE227D9F9FB00234579 /* Debug */,
+				84CD1BE327D9F9FB00234579 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 84CD1BA927D9F9F800234579 /* Project object */;
+}
